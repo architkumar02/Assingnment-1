@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf110
+{\fonttbl\f0\fnil\fcharset0 Calibri;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red50\green98\blue178;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri-340\partightenfactor0
+
+\f0\b\fs44 \cf0                                        Explaination\
+\pard\pardeftab720\ri-340\partightenfactor0
+
+\b0\fs24 \cf0 \
+In this Problem we have to look at the optimal location for the wood processing plant and also find the port so as to minimize the total transportation costs. As we have database given which consist of two tables, first we need to create a connection and then link a connection to python. Now we have to assign a database "location" and "ports" to pandas data frame and then we will print location and ports from the table.\
+\
+Next, we have to define a distance (\'93Dist\'94 is used) by converting latitude and longitude to the spherical coordinates in radians. As defined in the program \'93phi= 90- latitude\'94 and \'93theta = Longitude\'94 we need to compute spherical distance from spherical coordinates. As R(Radius of the earth) we are calculating Distance.\
+\
+Afterwards, we are creating a cost function. Considering total capacity of box as 500 and then calculating total capacity of boxes, we are calculating cost per box per km. which will give entire cost (\'93return dist*cost_per_box_per_km*boxes\'94)\
+\
+Now we need to find the optimal location for the processing plant and port so that we can minimize the total road transportation costs. So first we are calculating total production                 ( considering no damage). Then creating creating two for loops to go through all the locations and afterwards creating distance between location i and j. Now calculating cost for each location i and j ( using \'93cost_list\'94) and then full cost (using \'93cost_list_full\'94) also appending into another list.\
+\
+Next creating a for loop to go through all the ports and calculate distance between location i and port k. After calculating distance we are calculating all the cost of moving from i to k. After that we get the minimum cost at port and we find  minimal index for each location to get the port which is optimal considering cost.\
+\
+Now after Summing up all the cost ,moving all the production to single location and then final cost by adding sum of all the cost to the minimum cost generating port. As we get the minimum cost generating location, we will find the Index position of the port after printing location and port.\
+\
+In the end, on applying algorithm we are getting Location 4 and port 2 is giving the optimal solution of the problem.\
+\
+Submitting this solution by creating New repository name \'93
+\f1\b\fs36 \cf2 Assingnment-1\'94 .\
+
+\f0\b0\fs24 \cf0 And using git commands such as  \'93git add\'94 , \'93git commit \'96m\'94 and \'93git push\'94 all the files are submitted to the repository.\
+
+\f1\b\fs36 \cf2 \
+}
